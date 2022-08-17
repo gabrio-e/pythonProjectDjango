@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block conteudo %}
+    <h1>Login</h1>
+    <form action="" method="POST">
+        {%  csrf_token %}
+
+        {{form|crispy}}
+        <input type="text" name="nome" placeholder="digite seu Nome aqui">
+        <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+        <button type="submit" class="btn btn-light mt-3">Fazer Login</button>
+    </form>
+{% endblock %}

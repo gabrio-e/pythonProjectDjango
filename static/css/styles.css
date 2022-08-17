@@ -1,3 +1,13 @@
-h1{
-    color: red;
+h1 {
+    color:red;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    clear: both;
+    width: 100%;
+    bottom:0;
+    background-color: blue;
+    position: absolute;
+    background-color: blue;
 }
