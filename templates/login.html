@@ -10,8 +10,10 @@
         {%  csrf_token %}
 
         {{form|crispy}}
-        <input type="text" name="nome" placeholder="digite seu Nome aqui">
-        <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+        <label>Usuário</label>
+        <input type="text" name="nome" placeholder=>
+        <label>Senha</label>
+        <input type="password" name="password" placeholder=>
         <button type="submit" class="btn btn-light mt-3">Fazer Login</button>
     </form>
 {% endblock %}
